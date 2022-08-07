@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/asosiyFragment">
+    <fragment
+        android:id="@+id/malumotFragment"
+        android:name="developer.abdulahad.homework25.MalumotFragment"
+        android:label="fragment_malumot"
+        tools:layout="@layout/fragment_malumot" >
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="developer.abdulahad.homework25.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="developer.abdulahad.homework25.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_malumotFragment"
+            app:destination="@id/malumotFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_buyuruvchiFragment"
+            app:destination="@id/buyuruvchiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_imtiyozliFragment"
+            app:destination="@id/imtiyozliFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ogohlantiruvchiFragment"
+            app:destination="@id/ogohlantiruvchiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_taqiqlovchFragment"
+            app:destination="@id/taqiqlovchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/likedFragment"
+        android:name="developer.abdulahad.homework25.LikedFragment"
+        android:label="fragment_liked"
+        tools:layout="@layout/fragment_liked" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="developer.abdulahad.homework25.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/asosiyFragment"
+        android:name="developer.abdulahad.homework25.AsosiyFragment"
+        android:label="fragment_asosiy"
+        tools:layout="@layout/fragment_asosiy" >
+        <action
+            android:id="@+id/action_asosiyFragment_to_likedFragment"
+            app:destination="@id/likedFragment" />
+        <action
+            android:id="@+id/action_asosiyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_asosiyFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyuruvchiFragment"
+        android:name="developer.abdulahad.homework25.FragmentTur.BuyuruvchiFragment"
+        android:label="fragment_buyuruvchi"
+        tools:layout="@layout/fragment_buyuruvchi" >
+        <action
+            android:id="@+id/action_buyuruvchiFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imtiyozliFragment"
+        android:name="developer.abdulahad.homework25.FragmentTur.ImtiyozliFragment"
+        android:label="fragment_imtiyozli"
+        tools:layout="@layout/fragment_imtiyozli" >
+        <action
+            android:id="@+id/action_imtiyozliFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ogohlantiruvchiFragment"
+        android:name="developer.abdulahad.homework25.FragmentTur.OgohlantiruvchiFragment"
+        android:label="fragment_ogohlantiruvchi"
+        tools:layout="@layout/fragment_ogohlantiruvchi" >
+        <action
+            android:id="@+id/action_ogohlantiruvchiFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taqiqlovchFragment"
+        android:name="developer.abdulahad.homework25.FragmentTur.TaqiqlovchFragment"
+        android:label="fragment_taqiqlovch"
+        tools:layout="@layout/fragment_taqiqlovch" >
+        <action
+            android:id="@+id/action_taqiqlovchFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="developer.abdulahad.homework25.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" />
+</navigation>
